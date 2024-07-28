@@ -1,4 +1,9 @@
-# UTF_8_Glyph_All_Future_Character_models
+## UTF_8_Glyph_All_Future_Character_models
+# Update
+The Curve-based UTF-8 extension has some improvements over the manifold system, most importantly: (1) taking up way less space per character, and (2) being far faster to render each character, since all the lines drawn are in 2 dimensions. <br>
+I use a kind of "fake high precision" by using swatches of length instead of having nodes say lengths directly, and then stating angles on the nodes to underpin much of the drawing, where the drawing of one node is reliant on the positions of the previous nodes. This significantly reduced the amount of data for length to 7 bits instead of 32 bits in my previous idea, while still mostly allowing for that 16 bits of precision along the x and y axes, so long as you are fine with the available angle measures (covering most of the directions looked for). <br>
+This Curve-based system doesn't support animation, but most book readers don't want animated text. <br>
+# Previous standard
 A standard for a UTF-8 extension to end all UTF-8 extensions. This system (when implemented) allows the creation of every kind of visual representation of meaning with respect to a character in text, to the extent that is possible with a small enough character that a book written with this method will still fit on a writable CD.
 <br>
 This system includes support for detailed animations within the model such that there don't need to be any memory-intensive lookups. These animations on the lowest level just constitute 16 possible speeds per axis per vertex, limited to the sides of the bounding box that the given tetrahedron is drawn within (where the speed is with respect to the size of that bounding box). This is important to create emojis based on excitement (like the act of smiling or jumping or dancing), as well as to create glyphs equivalent in appearance to Ultron or Jarvis in the holograph model shown by Iron Man early in the "Avengers: Age of Ultron" movie.
