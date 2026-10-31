@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>
+      UTF-8 Glyph System For All Characters
+    </title>
+    <meta charset="utf-8">
+    <style>
+      i {font-family: monospace; font-style: normal; line-height: 150%; margin: 5px; font-size: large; }
+      p {font-family: serif; font-style: normal; line-height: 120%; text-indent: 10px; font-size: medium; }
+    </style>
+  </head>
+  <body>
+    <h1>UTF-8 Glyph System For All Characters</h1>
+    <p>
+      In order to make sure that all future character glyphs that anyone would want to draw can be written within the UTF-8 standard. The final part of the UTF-8 shall be used (the alien language reserved code, as Dylan Beattie would say).
+      <br>
+      The first 8 bits to signify that this particular symbol shall be used is:
+      <br>
+      <i>11111110</i>
+      <br>
+      The designer of the particular future character shall use these equations to define the curves around the shapes within the character glyph, using a canvas bounded by the points (0, 0), (100, -100) on the x-y plane (where the top left corner of the glyph as shown on screen is at (0, 0), and the bottom right corner of the glyph as shown on screen is at (100, -100)).
+      <br>
+      <i>
+        curve 0 color: <b>l</b> red, <b>m</b> green, <b>n</b> blue
+        <br>
+        curve 0 existence within time: (where "t" in this 
+        expression is the number of seconds (as a floating point number) since the page 
+        was loaded) the curve ONLY exists when this expression is true (allows for animation): 
+        <b>q</b> &lt; <b>r</b> + <b>s</b>*t + <b>u</b>*t*t + <b>v</b>*t*t*t + 
+        <b>x</b>*sin(<b>y</b> + <b>z</b>*t) + <b>A</b>*sin(<b>B</b> + <b>C</b>*t)
+        + <b>D</b>*sin(<b>E</b> + <b>F</b>*t) + <b>G</b>*sin(<b>H</b> + <b>I</b>*t)
+        + <b>J</b>*sin(<b>K</b> + <b>L</b>*t) + <b>M</b>*sin(<b>N</b> + <b>O</b>*t)
+        + <b>P</b>*sin(<b>Q</b> + <b>R</b>*t) + <b>S</b>*sin(<b>T</b> + <b>U</b>*t)
+        + <b>V</b>*sin(<b>W</b> + <b>X</b>*t) + <b>Y</b>*sin(<b>Z</b> + <b>w</b>*t); 
+        <br>
+        Values of t for the parametric equations of the curve:
+        <br>
+        Minimum t (first range): <b>p</b>
+        <br>
+        Maximum t (first range): <b>o</b>
+        <br>
+        Minimum t (second range): <b>n</b>
+        <br>
+        Maximum t (second range): <b>m</b>
+        <br>
+        Step t (if 0 then both curves are continuous): <b>l</b>
+        <br>
+        x(t)=<b>a</b> + <b>b</b>*t + <b>c</b>*t*t + <b>d</b>*t*t*t + <b>e</b>*t*t*t*t + 
+        <b>f</b>*sin(<b>g</b> + <b>h</b>*t) + <b>i</b>*sin(<b>j</b> + <b>k</b>*t*t);
+        <br>
+        y(t)=
+      </i>
+    </p>
+  </body>
+</html>
